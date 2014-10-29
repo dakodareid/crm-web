@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="/styles.css">
-		<title>CRM APP</title>
-	</head>
+<head>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+	<title>CRM APP</title>
+</head>
 
+<div class="header">
 	<header>
-		<h5>This is the header for now</h5>
-		<p>I might add some text here later</p>
+		<p>BITMAKER LABS</p>
+		<img src="/bitmaker_logo_small.png">
 	</header>
-	<body>
-		<%= yield %>	
-	</body>
 
+</div>
+
+<body>
+
+	<div class="left">
+	<h3 class="nav_menu">NAVIGATE</h3>
+		<ul>
+			<li><a href="/contacts">View all contacts</a></li>
+			<li><a href="/contacts/new">Add a contact</a></li>
+			<li><a href="/contacts/new">Modify a contact</a></li>
+			<li><a href="/contacts/new">Display a contact</a></li>
+			<li><a href="/contacts/new">Display one contact</a></li>
+			<li><a href="/contacts/new">Delete a contact</a></li>
+		</ul>
+	</div>
+
+	<div class= "right"> 
+		<%= yield %>	
+	</div>
+
+</body>
+
+
+
+
+<div class="footer">
 	<footer>
-		<h5>This is the footer for now</h5>
-		<p>I might add some text here later also</p>
+		<p>DAKODA REID</p>
 	</footer>
+</div>
+
 </html>

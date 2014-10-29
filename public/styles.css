@@ -1,3 +1,110 @@
-h1 {
-	color: blue
+html {
+	font-family: sans-serif;
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: /Montserrat-Regular.tty;
+}
+
+.header {
+	z-index: 1;
+	position: fixed;
+	margin-top: 0px;
+	height: 40px;
+	line-height: 30px;
+	width: 100%;
+	background-color: #3bb9da;
+}
+
+div header p {
+	font-family: Montserrat-Regular;
+	margin-top: 6px;
+	margin-left: 10px;
+	color: white;
+	font-size: 15px;
+}
+
+div header img {
+	display: inline-block;
+	height: 30px;
+	float: right;
+	vertical-align: top;
+}
+
+.main_image_specs {
+	margin-left: 20%;
+	margin-top: 125px;
+	width: 50%;
+}
+
+/*div div img {
+
+}*/
+
+.left {
+	float: left;
+	background-color: #efefef ;
+/*	border-right:1px solid #e2e2e2;*/
+	height:500px;
+	width:13%;
+	margin-left: 0px;
+	text-decoration: none;
+}
+
+.nav_menu {
+	font-family: Montserrat-Regular;
+	margin-top: 30%;
+	color: #5b5b5b;
+
+}
+
+div h3 {
+	font-size: 20px;
+	color: #363636;
+	margin-left: 8%;
+}
+.right {
+	float: right;
+	background-color: white ;
+	height:500px;
+	width:80%;
+	margin-right: 0px;
+}
+
+
+.footer {
+	clear: both;
+	height: 50px;
+	width: 100%;
+	background-color: #e2e2e2;
+	margin-bottom: 0px; 
+	line-height: 50px;
+/*	text-align: center;*/
+}
+
+div footer p {
+	text-align: right;
+	font-family: Montserrat-Regular;
+	margin-right: 10px;
+/*	margin-top: 5px;*/
+	color: #3bb9da;
+	font-size: 20px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited {
+	color: #5b5b5b;
+}
+
+a:hover {
+	color: #3bb9da;
+}
+
+ul {
+	list-style-type: none;
+	font-color: #5b5b5b;
 }
