@@ -4,10 +4,15 @@ html {
 
 @font-face {
     font-family: Montserrat-Regular;
-    src: /Montserrat-Regular.tty;
+    src: /Montserrat-Regular.ttf;
 }
 
-.header {
+@font-face {
+	font-family: Roboto-Regular;
+	src: /Roboto-Regular.ttf;
+}
+
+header {
 	z-index: 1;
 	position: fixed;
 	margin-top: 0px;
@@ -17,19 +22,22 @@ html {
 	background-color: #3bb9da;
 }
 
-div header p {
+header p {
 	font-family: Montserrat-Regular;
+	float: left;
 	margin-top: 6px;
 	margin-left: 10px;
 	color: white;
 	font-size: 15px;
 }
 
-div header img {
-	display: inline-block;
+header img {
 	height: 30px;
 	float: right;
 	vertical-align: top;
+	margin-right: 12px;
+	margin-top: 4px;
+
 }
 
 .main_image_specs {
@@ -46,32 +54,79 @@ div header img {
 	float: left;
 	background-color: #efefef ;
 /*	border-right:1px solid #e2e2e2;*/
-	height:500px;
-	width:13%;
+	height:750px;
+	width:200px;
 	margin-left: 0px;
 	text-decoration: none;
 }
 
 .nav_menu {
 	font-family: Montserrat-Regular;
-	margin-top: 30%;
+	margin-top: 85px;
 	color: #5b5b5b;
+}
+
+.under_score {
+	float: left;
+	height: 5px;
+	width: 100%;
+	background-color: #efefef;
+	border-top: 1px solid #e1e1e1
 
 }
 
 div h3 {
-	font-size: 20px;
+	font-size: 25px;
 	color: #363636;
-	margin-left: 8%;
+	margin-top: 35px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+/*	margin-left: 15px;*/
+	text-align: center;
 }
 .right {
 	float: right;
 	background-color: white ;
-	height:500px;
+	height:750px;
 	width:80%;
-	margin-right: 0px;
 }
 
+.home_line {
+	float: right;
+	margin-right: 25%;
+	margin-top: 1%;
+	width: 60%;
+	border-top: 1px solid #e1e1e1;
+	height: 20%;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited {
+	color: #5b5b5b;
+}
+
+a:hover {
+	color: #3bb9da;
+}
+
+ul {
+	list-style-type: none;
+	float: left;
+	font-color: #5b5b5b;
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-left: 8%;
+	font-family: Roboto-Regular;
+	padding: 0px
+}
+
+li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
 .footer {
 	clear: both;
@@ -90,21 +145,4 @@ div footer p {
 /*	margin-top: 5px;*/
 	color: #3bb9da;
 	font-size: 20px;
-}
-
-a{
-	text-decoration: none;
-}
-
-a:visited {
-	color: #5b5b5b;
-}
-
-a:hover {
-	color: #3bb9da;
-}
-
-ul {
-	list-style-type: none;
-	font-color: #5b5b5b;
 }
