@@ -64,6 +64,28 @@ header img {
 	color: #5b5b5b;
 }
 
+.new_contact_nav_box {
+	background-color: white;
+	opacity: 0.75;
+	height: 30px;
+	width: 200px;
+	margin-top: 127px;
+	float: left;
+	position: relative;
+	right: 200px;
+}
+
+.all_contacts_nav_box {
+	background-color: white;
+	opacity: 0.75;
+	height: 30px;
+	width: 200px;
+	margin-top: 158px;
+	float: left;
+	position: relative;
+	right: 200px;
+}
+
 .under_score {
 	float: left;
 	height: 5px;
@@ -105,7 +127,7 @@ div h3 {
 	margin-left: 200px;
 	margin-right: 0px;
 	background-color: white ;
-	height:750px;
+	height:725px;
 	width:80%;
 	min-width: 1020px;
 }
@@ -153,7 +175,11 @@ div h1 {
 }
 
 .inline {
-	display: inline-block;
+	display: inline;
+	font-family: Roboto-Regular;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: #a2a2a2;
 }
 
 ul {
@@ -193,6 +219,8 @@ a:visited {
 a:hover {
 	color: #3bb9da;
 }
+
+
 
 .footer {
 	clear: both;
