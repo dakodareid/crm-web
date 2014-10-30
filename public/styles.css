@@ -3,8 +3,8 @@ html {
 }
 
 @font-face {
-    font-family: Montserrat-Regular;
-    src: /Montserrat-Regular.ttf;
+	font-family: Montserrat-Regular;
+	src: /Montserrat-Regular.ttf;
 }
 
 @font-face {
@@ -46,14 +46,9 @@ header img {
 	width: 50%;
 }
 
-/*div div img {
-
-}*/
-
 .left {
 	float: left;
 	background-color: #efefef ;
-/*	border-right:1px solid #e2e2e2;*/
 	height:750px;
 	width:200px;
 	margin-left: 0px;
@@ -62,7 +57,7 @@ header img {
 
 .nav_menu {
 	font-family: Montserrat-Regular;
-	margin-top: 85px;
+	margin-top: 60px;
 	color: #5b5b5b;
 }
 
@@ -75,20 +70,33 @@ header img {
 
 }
 
+.under_score_new_contact {
+	/*float: right;*/
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15%;
+	width: 70%;
+	border-top: 1px solid #e1e1e1;
+	height: 2px;
+
+}
+
 div h3 {
 	font-size: 25px;
 	color: #363636;
 	margin-top: 35px;
 	margin-right: 10px;
 	margin-bottom: 15px;
-/*	margin-left: 15px;*/
 	text-align: center;
 }
+
 .right {
-	float: right;
+	/*float: right;*/
+	margin-left: 200px;
 	background-color: white ;
 	height:750px;
 	width:80%;
+	min-width: 1020px;
 }
 
 .home_line {
@@ -100,16 +108,35 @@ div h3 {
 	height: 20%;
 }
 
-a{
-	text-decoration: none;
+.create_new {
+	padding-top: 125px;
+	text-align: center;
 }
 
-a:visited {
+.create_all {
+	padding-top: 125px;
+	text-align: center;
+}
+
+.return_to_main {
+	float: right;
+	margin-top: 10px;
+	margin-right: 25%;
+	font-family: Roboto-Regular;
+	width: 260px;
+}
+
+.left_just_add_contacts {
+	float: left;
+	margin-top: 150px;
+	margin-left: 15%;
+	font-family: Roboto-Regular;
+}
+
+div h1 {
+	font-family: Montserrat-Regular;
 	color: #5b5b5b;
-}
-
-a:hover {
-	color: #3bb9da;
+	font-size: 40px;
 }
 
 ul {
@@ -126,6 +153,28 @@ ul {
 li {
 	padding-top: 5px;
 	padding-bottom: 5px;
+	text-align: left;
+}
+
+ol {
+		font-family: Roboto-Regular;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		color: #5b5b5b;
+		margin-left: 25%;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+a:visited {
+	color: #5b5b5b;
+}
+
+a:hover {
+	color: #3bb9da;
 }
 
 .footer {
@@ -135,14 +184,33 @@ li {
 	background-color: #e2e2e2;
 	margin-bottom: 0px; 
 	line-height: 50px;
-/*	text-align: center;*/
 }
 
 div footer p {
 	text-align: right;
 	font-family: Montserrat-Regular;
 	margin-right: 10px;
-/*	margin-top: 5px;*/
 	color: #3bb9da;
 	font-size: 20px;
+}
+
+.blue_button {
+/*  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;*/
+  box-sizing: content-box;
+  width: 75px;
+  height: 20px;
+  cursor: pointer;
+  margin-left:5px;
+  margin-right: 5px;
+  border: 2px solid #3bb9da;
+  border-radius: 25px;
+  font-size: 12px;
+  font-family: Roboto-Regular;
+  color: #3bb9da;
+  text-align: center;
+  overflow: clip;
+  overflow: clip;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0);
 }

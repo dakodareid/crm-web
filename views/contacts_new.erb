@@ -1,12 +1,15 @@
-<h1>Create New Contact</h1>
+<div class="create_all">
+	<h1>CREATE A NEW CONTACT</h1>
 
 <form action="/contacts" method="post">
-	<input type="text" name="first_name">
-	<input type="text" name="last_name">
-	<input type="text" name="email">
-	<input type="text" name="note">
-	<input type="submit" name="Submit">
+	<input type="text" name="first_name" placeholder="First Name">
+	<input type="text" name="last_name" placeholder="Last Name">
+	<input type="text" name="email" placeholder="Email Address">
+	<input type="text" name="note" placeholder="Notes">
+	<input type="submit" name="Submit" class="blue_button">
 </form>
+</div>
 
-<h3><a href="/contacts">Show all contacts</a></h3>
-<h3><a href="/">Return to Main Menu</a></h3>
+<div class="under_score_new_contact"></div>
+<!-- <h3><a href="/contacts">Show all contacts</a></h3> -->
+<h3 class="return_to_main"><a href="/">Return to Main Menu</a></h3>
