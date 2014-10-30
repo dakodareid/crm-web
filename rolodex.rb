@@ -1,5 +1,5 @@
 class Rolodex
-	attr_reader :contacts
+	attr_reader :contacts 
 
 	def initialize
 		@contacts = []

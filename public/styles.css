@@ -86,6 +86,17 @@ header img {
 	right: 200px;
 }
 
+.search_contact_nav_box {
+	background-color: white;
+	opacity: 0.75;
+	height: 30px;
+	width: 200px;
+	margin-top: 190px;
+	float: left;
+	position: relative;
+	right: 200px;
+}
+
 .under_score {
 	float: left;
 	height: 5px;
@@ -150,6 +161,9 @@ div h3 {
 
 .create_all {
 	padding-top: 125px;
+	/*text-align: center;*/
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
 }
 
