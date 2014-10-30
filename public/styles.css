@@ -41,8 +41,11 @@ header img {
 }
 
 .main_image_specs {
-	margin-left: 20%;
-	margin-top: 125px;
+	/*margin-left: 20%;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 125px;
 	width: 50%;
 }
 
@@ -71,14 +74,21 @@ header img {
 }
 
 .under_score_new_contact {
-	/*float: right;*/
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 15%;
 	width: 70%;
 	border-top: 1px solid #e1e1e1;
 	height: 2px;
+}
 
+.under_score_all_contact {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15%;
+	width: 70%;
+	border-top: 1px solid #e1e1e1;
+	height: 2px;
 }
 
 div h3 {
@@ -93,6 +103,7 @@ div h3 {
 .right {
 	/*float: right;*/
 	margin-left: 200px;
+	margin-right: 0px;
 	background-color: white ;
 	height:750px;
 	width:80%;
@@ -100,9 +111,11 @@ div h3 {
 }
 
 .home_line {
-	float: right;
-	margin-right: 25%;
-	margin-top: 1%;
+	/*float: right;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 	width: 60%;
 	border-top: 1px solid #e1e1e1;
 	height: 20%;
@@ -121,14 +134,14 @@ div h3 {
 .return_to_main {
 	float: right;
 	margin-top: 10px;
-	margin-right: 25%;
+	margin-right: 15%;
 	font-family: Roboto-Regular;
 	width: 260px;
 }
 
 .left_just_add_contacts {
 	float: left;
-	margin-top: 150px;
+	margin-top: 10px;
 	margin-left: 15%;
 	font-family: Roboto-Regular;
 }
@@ -137,6 +150,10 @@ div h1 {
 	font-family: Montserrat-Regular;
 	color: #5b5b5b;
 	font-size: 40px;
+}
+
+.inline {
+	display: inline-block;
 }
 
 ul {
@@ -192,6 +209,15 @@ div footer p {
 	margin-right: 10px;
 	color: #3bb9da;
 	font-size: 20px;
+}
+
+.small_main_logo {
+	float: right;
+	/*margin-right: 10px;*/
+	position: relative;
+	left: 130px;
+	padding-top: 60px;
+	width: 200px;
 }
 
 .blue_button {
