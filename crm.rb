@@ -2,7 +2,7 @@ require 'sinatra'
 require_relative 'rolodex'
 require_relative 'contact'
 
-$rolodex= Rolodex.new
+@@rolodex= Rolodex.new
 @@rolodex.add_contact(Contact.new("Dakoda", "Reid", "Dakoda@gmail.com", "none"))
 
 get '/' do 

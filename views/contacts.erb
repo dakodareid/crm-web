@@ -5,13 +5,13 @@
 <div class="create_new">
 	<h1>ALL CONTACTS</h1>
 
-<p class="inline">FIRST NAME</p>
-<P class="inline">LAST NAME</P>
-<p class="inline">EMAIL</p>
-<P class="inline">NOTE</P>
+	<p class="inline">FIRST NAME</p>
+	<P class="inline">LAST NAME</P>
+	<p class="inline">EMAIL</p>
+	<P class="inline">NOTE</P>
 
 	<ol>
-		<% $rolodex.contacts.each do |contact| %>
+		<% @@rolodex.contacts.each do |contact| %>
 		<li><%= contact.first_name %> <%= contact.last_name %> <%= contact.email %> <%= contact.note %></li>
 		<% end %>
 	</ol>
