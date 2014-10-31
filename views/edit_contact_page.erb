@@ -1,0 +1,21 @@
+<img src="/main_logo_small_blue.png" class="small_main_logo">
+
+<div class="edit_contact_nav_box"></div>
+
+<div class="create_all">
+	<h1>CHANGE ME</h1>
+
+<form action="/contacts/<%= @contact.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input type="text" name="first_name" value="<%= @contact.first_name %>">
+  <input type="text" name="last_name" value="<%= @contact.last_name %>">
+  <input type="text" name="email" value="<%= @contact.email %>">
+  <input type="text" name="note" value="<%= @contact.note %>">
+  <input type="submit" name="Submit">
+
+</form>
+</div>
+
+<div class="under_score_all_contact"></div>
+
+<h3 class="return_to_main"><a href="/">Return to Main Menu</a></h3>

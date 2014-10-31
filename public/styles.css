@@ -97,6 +97,28 @@ header img {
 	right: 200px;
 }
 
+.edit_contact_nav_box {
+	background-color: white;
+	opacity: 0.75;
+	height: 30px;
+	width: 200px;
+	margin-top: 220px;
+	float: left;
+	position: relative;
+	right: 200px;
+}
+
+.delete_contact_nav_box {
+	background-color: white;
+	opacity: 0.75;
+	height: 30px;
+	width: 200px;
+	margin-top: 251px;
+	float: left;
+	position: relative;
+	right: 200px;
+}
+
 .under_score {
 	float: left;
 	height: 5px;
@@ -161,10 +183,13 @@ div h3 {
 
 .create_all {
 	padding-top: 125px;
-	/*text-align: center;*/
-	margin-right: auto;
-	margin-left: auto;
 	text-align: center;
+}
+
+.create_delete {
+	padding-top: 125px;
+	text-align: center;
+	font-size: 0.67em;
 }
 
 .return_to_main {
@@ -186,6 +211,7 @@ div h1 {
 	font-family: Montserrat-Regular;
 	color: #5b5b5b;
 	font-size: 40px;
+	margin-right: 15%;
 }
 
 .inline {
@@ -195,6 +221,31 @@ div h1 {
 	padding-right: 40px;
 	color: #a2a2a2;
 }
+
+.inline_result {
+	display: inline;
+	font-family: Roboto-Regular;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: #5b5b5b;
+}
+
+.inline_add {
+	display: inline;
+	font-family: Roboto-Regular;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #a2a2a2;
+}
+
+.inline_id {
+	display: inline;
+	font-family: Roboto-Regular;
+	padding-right: 15%;
+	color: #a2a2a2;
+	font-size: 15px;
+}
+
 
 ul {
 	list-style-type: none;
@@ -281,4 +332,9 @@ div footer p {
   overflow: clip;
   letter-spacing: 1px;
   background: rgba(0,0,0,0);
+}
+
+form {
+	padding-top: 60px;
+
 }

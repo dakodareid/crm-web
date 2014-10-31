@@ -1,4 +1,21 @@
-<h1><%= @contact.first_name %> <%= @contact.last_name %><h1>
-<p><strong>Email</strong><%= @contact.email %></p>
-<p><strong>Note</strong></p>
-<p><%= @contact.note %></p>
+
+
+<img src="/main_logo_small_blue.png" class="small_main_logo">
+
+<div class="search_contact_nav_box"></div>
+
+<div class="create_all">
+	<h1>Contact Found:</h1>
+
+	<p class="inline">FIRST NAME</p>
+	<P class="inline">LAST NAME</P>
+	<p class="inline">EMAIL</p>
+	<P class="inline">NOTE</P>
+
+	<p> <%= @contact.first_name %> <%= @contact.last_name %> <%= @contact.email %> <%= @contact.note %></p>
+	
+	</div>
+
+	<div class="under_score_all_contact"></div>
+
+	<h3 class="return_to_main"><a href="/">Return to Main Menu</a></h3>
