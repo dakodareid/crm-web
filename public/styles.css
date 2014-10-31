@@ -41,7 +41,6 @@ header img {
 }
 
 .main_image_specs {
-	/*margin-left: 20%;*/
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -139,7 +138,7 @@ header img {
 .under_score_new_contact {
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 30%;
+	margin-top: 40%;
 	width: 70%;
 	border-top: 1px solid #e1e1e1;
 	height: 2px;
@@ -149,6 +148,15 @@ header img {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 15%;
+	width: 70%;
+	border-top: 1px solid #e1e1e1;
+	height: 2px;
+}
+
+.under_score_delmod_contact {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 27%;
 	width: 70%;
 	border-top: 1px solid #e1e1e1;
 	height: 2px;
@@ -173,7 +181,6 @@ div h3 {
 }
 
 .right {
-	/*float: right;*/
 	margin-left: 200px;
 	margin-right: 0px;
 	background-color: white ;
@@ -319,7 +326,6 @@ div footer p {
 
 .small_main_logo {
 	float: right;
-	/*margin-right: 10px;*/
 	position: relative;
 	left: 20px;
 	padding-top: 60px;
@@ -418,14 +424,3 @@ input {
 	margin-left: 45%;
 	font-size: 17px;
 }
-
-/*.create_not_found {
-	padding-top: 125px;
-	text-align: center;
-	font-family: Montserrat-Regular;
-	color: #5b5b5b;
-	font-size: 40px;
-	margin-bottom: 10px;
-	margin-right: auto;
-	margin-left: 10%;
-	}*/
