@@ -265,11 +265,11 @@ li {
 }
 
 ol {
-		font-family: Roboto-Regular;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		color: #5b5b5b;
-		margin-left: 25%;
+	font-family: Roboto-Regular;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #5b5b5b;
+	margin-left: 25%;
 }
 
 
@@ -315,26 +315,45 @@ div footer p {
 
 .blue_button {
 /*  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;*/
-  box-sizing: content-box;
-  width: 75px;
-  height: 20px;
-  cursor: pointer;
-  margin-left:5px;
-  margin-right: 5px;
-  border: 2px solid #3bb9da;
-  border-radius: 25px;
-  font-size: 12px;
-  font-family: Roboto-Regular;
-  color: #3bb9da;
-  text-align: center;
-  overflow: clip;
-  overflow: clip;
-  letter-spacing: 1px;
-  background: rgba(0,0,0,0);
+-moz-box-sizing: content-box;*/
+box-sizing: content-box;
+width: 75px;
+height: 20px;
+cursor: pointer;
+margin-left:5px;
+margin-right: 5px;
+border: 2px solid #3bb9da;
+border-radius: 25px;
+font-size: 12px;
+font-family: Roboto-Regular;
+color: #3bb9da;
+text-align: center;
+overflow: clip;
+overflow: clip;
+letter-spacing: 1px;
+background: rgba(0,0,0,0);
 }
 
 form {
 	padding-top: 60px;
+}
 
+table {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+th {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 30px;
+	font-family: Roboto-Regular;
+	color: #a2a2a2;
+	padding-top: 40px;
+}
+
+td {
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: left;
 }

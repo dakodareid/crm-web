@@ -4,18 +4,34 @@
 
 <div class="create_new">
 	<h1>ALL CONTACTS</h1>
-
+<!-- 
 	<p class="inline">FIRST NAME</p>
 	<P class="inline">LAST NAME</P>
 	<p class="inline">EMAIL</p>
 	<P class="inline">NOTE</P>
+	<P class="inline">ID</P> -->
 
-	<ol>
+	<table>
+		<tr>
+			<th>FIRST NAME</th>
+			<th>LAST NAME</th>
+			<th>EMAIL</th>
+			<th>NOTE</th>
+			<th>ID</th>
+		</tr>
+	</table>	
+
+	<table>
 		<% @contacts.each do |contact| %>
-		<li><%= contact.first_name %> <%= contact.last_name %> <%= contact.email %> <%= contact.note %></li>
+		<tr>
+			<td><%= contact.first_name %></td>
+			<td><%= contact.last_name %></td>
+			<td><%= contact.email %></td>
+			<td><%= contact.note %></td>
+			<td><%= contact.id %></td>
+		</tr>
 		<% end %>
-	</ol>
-
+	</table>
 </div>
 
 <div class="under_score_all_contact"></div>
