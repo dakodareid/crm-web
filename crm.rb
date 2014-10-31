@@ -3,8 +3,6 @@ require 'data_mapper'
 
 DataMapper.setup(:default, "sqlite3:database.sqlite3")
 
-require_relative 'rolodex'
-
 class Contact
   include DataMapper::Resource
 
@@ -18,16 +16,17 @@ end
 DataMapper.finalize
 DataMapper.auto_upgrade!
 
-$rolodex= Rolodex.new
-$rolodex.add_contact(Contact.new("Dakoda", "Reid", "Dakoda@gmail.com", "none"))
+# $rolodex= Rolodex.new
+# $rolodex.add_contact(Contact.new("Dakoda", "Reid", "Dakoda@gmail.com", "none"))
 
 get '/' do 
 	@crm_app_name = "My CRM"
 	erb :index
 end
 
-get '/contacts' do
-	erb :contacts
+get "/contacts" do
+  @contacts = Contact.all
+  erb :contacts
 end
 
 get '/contacts/new' do
@@ -47,13 +46,24 @@ post '/contacts/search' do
   end
 end
 
-contact = $rolodex.find(1000)
+# contact = $rolodex.find(1000)
 
-post '/contacts' do
-	new_contact = Contact.new(params[:first_name], params[:last_name], params[:email], params[:note])
-	$rolodex.add_contact(new_contact)
-	redirect to('/contacts')
+# post '/contacts' do
+# 	new_contact = Contact.new(params[:first_name], params[:last_name], params[:email], params[:note])
+# 	$rolodex.add_contact(new_contact)
+# 	redirect to('/contacts')
+# end
+
+post '/contacts' do 
+  contact = Contact.create(
+    :first_name => params[:first_name],
+    :last_name => params[:last_name],
+    :email => params[:email],
+    :note => params[:note]
+    )
+  redirect to('/contacts')
 end
+
 
 get '/contacts/edit' do
 	erb :edit_contact
