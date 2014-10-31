@@ -1,15 +1,11 @@
-<img src="/main_logo_small_blue.png" class="small_main_logo">
+<img src="/hi_bitmaker_small.png" class="small_main_logo">
 
 <div class="all_contacts_nav_box"></div>
 
 <div class="create_new">
 	<h1>ALL CONTACTS</h1>
-<!-- 
-	<p class="inline">FIRST NAME</p>
-	<P class="inline">LAST NAME</P>
-	<p class="inline">EMAIL</p>
-	<P class="inline">NOTE</P>
-	<P class="inline">ID</P> -->
+
+	<div class="over_score_all_contact"></div>
 
 	<table>
 		<tr>
@@ -24,11 +20,11 @@
 	<table>
 		<% @contacts.each do |contact| %>
 		<tr>
-			<td><%= contact.first_name %></td>
-			<td><%= contact.last_name %></td>
-			<td><%= contact.email %></td>
-			<td><%= contact.note %></td>
-			<td><%= contact.id %></td>
+			<td><%= contact.first_name.capitalize %></td>
+			<td><%= contact.last_name.capitalize %></td>
+			<td><%= contact.email.capitalize %></td>
+			<td><%= contact.note.to_s.capitalize %></td>
+			<td><%= contact.id%></td>
 		</tr>
 		<% end %>
 	</table>
