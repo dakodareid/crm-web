@@ -38,7 +38,7 @@ get '/contacts/search' do
 end
 
 post '/contacts/search' do
-  @contact = $rolodex.find(params[:id].to_i)
+  @contact = Contact.get(params[:id].to_i)
   if @contact
     erb :show_contact
   else
